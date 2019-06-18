@@ -1,0 +1,10 @@
+/**
+ * 获取图片地址
+ */
+
+@function assetsURL($path) {
+  @return url('../asset/'+$path+'?v='+$DEPLOY_TAG);
+}
+@function staticFilesURL($path) {
+  @return url('//'+$STATIC_FILES_HOST+'/'+$path+'?v='+$DEPLOY_TAG);
+}

@@ -1,0 +1,27 @@
+@import '../../scss/base/*';
+
+.g-music {
+  display: block;
+  z-index: $zindex-fixed;
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  margin: 10px 10px 0 0;
+  top: 0;
+  right: 0;
+  background: staticFilesURL('common/music-component-image.png') no-repeat center center;
+  background-size: 58px 58px;
+  &--active {
+    animation: g-music-rotate 1s linear infinite;
+  }
+}
+
+@keyframes g-music-rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

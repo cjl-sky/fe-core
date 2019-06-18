@@ -1,0 +1,37 @@
+.mcropper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #000;
+  height: 100%;
+  &__content {
+    width: 100%;
+    height: 100%;
+    &--round {
+      .cropper-view-box {
+        outline: none;
+        border: 1px solid #39f;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__footer {
+    text-align: center;
+  }
+  &__btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    background-color: #b9e256;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+  }
+}

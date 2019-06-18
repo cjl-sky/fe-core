@@ -1,0 +1,48 @@
+/**
+ * 前端项目通用基础样式，基于 normalize.css
+ */
+
+// reset styles start
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+:link,
+:visited,
+ins {
+  text-decoration: none;
+}
+// reset styles end
+
+// custom class start
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+// custom class end

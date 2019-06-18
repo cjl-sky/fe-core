@@ -1,0 +1,100 @@
+body {
+  &.single-screen {
+    height: 100%;
+    overflow: hidden;
+
+    .main,
+    #wrapper {
+      height: 1220px;
+      overflow: hidden;
+    }
+
+    .swiper-container {
+      height: 100%;
+
+      .swiper-slide {
+        background-size: 750px 1344px;
+        background-repeat: no-repeat;
+        background-position: center -160px;
+
+        .ani {
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 600px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 18px;
+}
+
+.loading .into {
+  width: 250px;
+  height: 20px;
+  border: 2px solid #403523;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.loading .into .step {
+  border-right: 2px solid #403523;
+  width: 10px;
+  height: 20px;
+  overflow: hidden;
+  background: #298d37;
+}
+
+.progress-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18px;
+
+  .progress {
+    width: 250px;
+    height: 20px;
+    border: 2px solid #403523;
+    border-radius: 40px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 10px;
+
+    .step {
+      display: block;
+      border-right: 2px solid #403523;
+      width: 10px;
+      height: 20px;
+      overflow: hidden;
+      background: #298d37;
+    }
+  }
+}
+
+.arrow-up {
+  background: assetsURL('img/arrow-up.png') no-repeat;
+  position: fixed;
+  height: 34px;
+  width: 56px;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -18px;
+  -webkit-animation: myarrow 1s infinite;
+  animation: myarrow 1s infinite;
+  z-index: 9999;
+}
+
+audio {
+  visibility: hidden;
+}
