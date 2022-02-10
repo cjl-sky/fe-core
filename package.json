@@ -24,7 +24,7 @@
     "mocha": "^2.4.5",
     "sinon": "http://registry.npmjs.org/sinon/-/sinon-1.17.7.tgz",
     "chalk": "^2.3.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "node-sass-package-importer": "^5.1.0",
     "path": "^0.12.7",
     "shelljs": "^0.8.1",
